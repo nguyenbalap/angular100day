@@ -267,4 +267,7 @@ export class AppComponent {
   //lesson9
   checked = false;
   showLast = false;
+
+  counter = 1;
+  navs =['Active' , 'Link1' ,'Link2']
 }

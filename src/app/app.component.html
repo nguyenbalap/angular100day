@@ -12,7 +12,7 @@ Age: {{user.age}}
 <input type="text" [ngModel]="user.name" (ngModelChange)="user.name = $event" />-->
 <app-hello></app-hello>
 
-<p [style]="{ fontSize: '2rem' }" >Start lesson 6</p>
+<p [style]="{ fontSize: '2rem' }" >Đây là phần Input</p>
 
 <button [style]="{ fontSize: '2rem' }" (click)="cur = cur + 1">+</button>
 <app-progress-bar
@@ -29,6 +29,7 @@ Age: {{user.age}}
   >
   </app-progress-bar>
 </p>
+<p [style]="{ fontSize: '2rem' }" >Đây là phần Class Binding</p>
 <button (click)="isDanger = !isDanger">Toggle Danger</button>
 <br />
 <button (click)="isWarning = !isWarning">Toggle Warning</button>
@@ -49,7 +50,7 @@ Age: {{user.age}}
   End lesson 6
 </p>
 
-<p [style]="{ fontSize: '2rem' }">Start lesson 8</p>
+<p [style]="{ fontSize: '2rem' }">Đây là phần output</p>
 <app-author-list></app-author-list>
 
 <ul>
@@ -69,7 +70,7 @@ Age: {{user.age}}
   </li>
 </ul>
 
-<p [style]="{fontSize:  '2rem'}">Start Lesson 9</p>
+<p [style]="{fontSize:  '2rem'}">Custom Two-way binding and ViewChild/ViewChildren</p>
 
 <p>
   Your Version Angular: {{ name }}
@@ -96,3 +97,28 @@ Age: {{user.age}}
     <app-toggle [(checked)]="checked"></app-toggle>
 </ng-container>
 
+<p> typescript</p>
+
+<p [style]="{fontSize:  '2rem'}">
+  ng-template & ng-container
+</p>
+
+<div class="card">
+  <div class="card-header">
+      You have selected <ng-container [ngTemplateOutlet]="counterTmpl"></ng-container> .
+  </div>
+  <div class="card-body">
+      There are <ng-container [ngTemplateOutlet]="counterTmpl"></ng-container> 
+  </div>
+  <div class="card-footer">
+      You have selected <ng-container [ngTemplateOutlet]="counterTmpl"></ng-container>
+  </div>
+</div>
+
+<<ng-template #counterTmpl>
+  <span class="badge badge-primary">{{counter}}</span> item
+</ng-template>
+<ng-template #linkTemplate let-l = "link">
+  <h3>{{ l }}</h3>
+</ng-template>
+<tab-container [navs] = "navs" [linkTemplate]="linkTemplate"></tab-container>
