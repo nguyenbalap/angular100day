@@ -12,6 +12,7 @@
   },
   "private": true,
   "dependencies": {
+    "@abraham/reflection": "^0.7.0",
     "@angular/animations": "~11.0.1",
     "@angular/cli": "~11.0.2",
     "@angular/common": "~11.0.1",
@@ -24,8 +25,10 @@
     "@angular/router": "~11.0.1",
     "express": "^4.17.1",
     "path": "^0.12.7",
+    "reflect-metadata": "^0.1.13",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
+    "tsyringe": "^4.4.0",
     "typescript": "~4.0.2",
     "zone.js": "~0.10.2"
   },

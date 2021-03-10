@@ -1,0 +1,13 @@
+.tab-header {
+  display: flex;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #000;
+  margin-bottom: 0.5rem;
+}
+.tab-item-header {
+  margin-right: 0.5rem;
+  padding: 5px 10px;
+}
+.tab-item-header.active {
+  border: 1px solid blue;
+}

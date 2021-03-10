@@ -11,6 +11,13 @@ import { AuthorDetailComponent } from './authors/author-detail.component';
 
 import { ToggleComponent } from './toggle/toggle.component';
 import { TabContainerComponent } from './tabs.component';
+import { TestTypeScript } from './indexx';
+import {CartService, CartExtService, Product} from "./index1";
+import { TabPanelComponent } from './tab-panel/tab-panel.component';
+import { TabGroupComponent } from './tab-group/tab-group.component';
+import { TabPanelContentDirective } from './tab-panel-content.directive';
+import { BsTabGroupComponent } from './bs-tab-group/bs-tab-group.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +27,13 @@ import { TabContainerComponent } from './tabs.component';
     AuthorListComponent,
     AuthorDetailComponent,
     ToggleComponent,
-    TabContainerComponent
+    TabContainerComponent,
+    TestTypeScript,
+    Product,
+    TabPanelComponent,
+    TabGroupComponent,
+    TabPanelContentDirective,
+    BsTabGroupComponent
   ],
   imports: [
     BrowserModule,FormsModule,

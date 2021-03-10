@@ -14,7 +14,7 @@ export class AppComponent {
   name = 'Angular ' + VERSION.major;
 
   ngOnInit(){
-    this.toggleComp.changes.subscribe(console.log);
+    //this.toggleComp.changes.subscribe(console.log);
   }
   ngAfterViewInit(){
     console.log(this.toggleComp);
@@ -270,4 +270,6 @@ export class AppComponent {
 
   counter = 1;
   navs =['Active' , 'Link1' ,'Link2']
+
+  curruntIndex = 0;
 }

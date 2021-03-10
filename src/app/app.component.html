@@ -108,7 +108,7 @@ Age: {{user.age}}
       You have selected <ng-container [ngTemplateOutlet]="counterTmpl"></ng-container> .
   </div>
   <div class="card-body">
-      There are <ng-container [ngTemplateOutlet]="counterTmpl"></ng-container> 
+      There are <ng-container [ngTemplateOutlet]="counterTmpl"></ng-container>
   </div>
   <div class="card-footer">
       You have selected <ng-container [ngTemplateOutlet]="counterTmpl"></ng-container>
@@ -122,3 +122,53 @@ Age: {{user.age}}
   <h3>{{ l }}</h3>
 </ng-template>
 <tab-container [navs] = "navs" [linkTemplate]="linkTemplate"></tab-container>
+
+
+<indexx-test>
+  <h3>Test typescript</h3>
+  <button>Submit</button>
+  <button>Cancel</button>
+</indexx-test>
+
+<indexx-test flexDirection="column">
+  <input type="email" />
+  <input type="password" />
+</indexx-test>
+
+<di-index></di-index>
+<p>
+<button class="btn btn-primary" (click)="show = !show">Toggle tab 4</button>
+</p>
+<app-tab-group>
+	<app-tab-panel title="Tab 1">
+			content tab 1
+	</app-tab-panel>
+	<app-tab-panel title="Tab 2">
+			content tab 2
+	</app-tab-panel>
+	<app-tab-panel title="Tab 3">
+			content tab 3
+	</app-tab-panel>
+  <app-tab-panel title="Tab 4" *ngIf="show">
+			content tab 4
+	</app-tab-panel>
+</app-tab-group>
+
+<app-bs-tab-group>
+	<app-tab-panel title="First Tab">
+			content tab 1
+	</app-tab-panel>
+	<app-tab-panel title="Second tab ">
+			content tab 2
+	</app-tab-panel>
+	<app-tab-panel title="Third tab">
+			content tab 3
+	</app-tab-panel>
+  <app-tab-panel title="Fourth tab" *ngIf="show">
+			content tab 4
+	</app-tab-panel>
+</app-bs-tab-group>
+
+
+
+
